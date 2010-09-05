@@ -1,0 +1,29 @@
+body {
+background:url('img/bkg.png');
+color:#111111;
+margin:auto;
+padding:0;
+} 
+
+h1,h2 {
+text-align:center;
+}
+
+h1 {
+ font-size:150px; 
+}
+
+h2 {
+ font-size:xx-large; 
+}
+
+#header {
+background:url('img/bkg_head.png');
+height:130px;
+padding:5px 0 0 15px;
+}
+
+#bouton {
+width:300px;
+margin:auto;
+}
