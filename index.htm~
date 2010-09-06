@@ -7,9 +7,10 @@
        <link rel="stylesheet" media="screen" type="text/css" title="Design" href="design.css" />
    </head>
    <body>
-      <div id="header"><img src="img/logo.png"></div>
-      <h1>Entrez</h1>
-      <h2>dans l'univers de META</h2>
-      <div id="bouton"><img src="img/circle.png"></div>
+      <div id="header"><img src="img/logo_small.png"></img></div>
+      <!--><h1>Entrez</h1>
+      <h2>dans l'univers de META</h2> <!-->
+      <img src="img/index_txt.png"></img><br/>
+      <div id="bouton"><a href="./wordpress/index.php"><img src="img/logo_round.png"></a></img></div>
    </body>
 </html>

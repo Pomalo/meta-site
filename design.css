@@ -5,25 +5,23 @@ margin:auto;
 padding:0;
 } 
 
-h1,h2 {
-text-align:center;
-}
-
-h1 {
- font-size:150px; 
-}
-
-h2 {
- font-size:xx-large; 
-}
-
 #header {
 background:url('img/bkg_head.png');
 height:130px;
 padding:5px 0 0 15px;
 }
 
+#index_txt
+{
+ text-align:center;
+ padding:50px 0;
+}
+
 #bouton {
 width:300px;
-margin:auto;
+margin:25px auto;
+}
+
+a img, a:active img,a:focus img, a:visited img {
+ border:0; 
 }
