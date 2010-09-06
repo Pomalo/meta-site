@@ -25,12 +25,12 @@ body {
 	}
 
 #header {
-	background: url('img/wp_head_bkg.png') no-repeat bottom center;
+	background: url('img/wp_head_bkg.png') no-repeat top center;
 	width:800px;
 	}
 
 #headerimg 	{
-	height: 175px;
+	height: 125px;
 	width: 800px; 
 	} 
 
@@ -261,14 +261,14 @@ body {
 #header {
 	margin: 0;
 	padding: 0; 
-	height: 175px; 
+	height: 125px; 
 	width: 800px;
 	}
 
 #headerimg {
 	margin: 0;
 	padding: 0;
-	height: 175px;
+	height: 125px;
 	width:800px;
 	}
 
