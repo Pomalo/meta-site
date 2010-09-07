@@ -102,6 +102,7 @@ body {
 	background: url('img/wp_foot_bkg.png') repeat-x; 
 	border: none;
 	font-size:11px;
+	color:#fff;
 	}
 #footer a{
 	font-weight:bold
@@ -126,8 +127,8 @@ h1 {
 #headerimg .description {
 	font-size: 1.2em;
 	text-align: center;
-	color:#FFF;
-	width:760px;
+	color:#333;
+	width:800px;
 	}
 
 h2 {
@@ -149,12 +150,12 @@ h3 {
 
 h1, h1 a, h1 a:hover, h1 a:visited, #headerimg{
 	text-decoration: none;
-	color: #FFF;
-	width:760px;
+	color: #333;
+	width:800px;
 	}
 
 h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
-	color: #cccccc;
+	color: #aaaaaa;
 	}
 .post h2 a{
 	color:#ff6600;
@@ -216,13 +217,14 @@ acronym, abbr, span.caps
 	}
 
 a, h2 a:hover, h3 a:hover {
-	color: #222;
+	color: #000;
 	text-decoration: none;
+	font-weight:bold;
 	}
 
 a:hover {
-	color: #000;
-	text-wieght: bold;
+	color: #333;
+	font-weight: bold;
 	}
 
 #wp-calendar #prev a, #wp-calendar #next a {
@@ -323,9 +325,7 @@ body {
 }
 
 .postmetadata {
-	background-color:#f8efe7;
-	border-top:1px dashed #e7e7e7;
-	border-bottom:1px dashed #e7e7e7;
+	background-color:#ff6600;
 	clear: left;
 }
 
