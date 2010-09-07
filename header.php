@@ -14,7 +14,7 @@
 
 <?php
 // Checks to see whether it needs a sidebar or not
-if ( !empty($withcomments) && !is_single() ) {
+if ( empty($withcomments) && !is_single() ) {
 ?>
 	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/img/wp_content_bkg_wide.png") repeat-y top; border: none; }
 <?php } else { // No sidebar ?>
@@ -32,7 +32,7 @@ if ( !empty($withcomments) && !is_single() ) {
 <div id="header"><div id="headerimg"><h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1><div class="description"><?php bloginfo('description'); ?></div></div></div>
 <div id="top-menu">
 	<ul>
-		<li><a <?php if (is_home()) echo('class="current" '); ?>href="<?php bloginfo('url'); ?>">Home</a></li>
+		<li><a <?php if (is_home()) echo('class="current" '); ?>href="<?php bloginfo('url'); ?>">Actualités</a></li>
 		<?php wp_list_pages('depth=1&title_li='); ?>
 		
 	</ul>
