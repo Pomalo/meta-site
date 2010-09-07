@@ -348,9 +348,10 @@ body {
 
 /*	Begin Headers */
 h1 {
-	padding-top: 70px;
+	padding-top: 30px;
 	margin: 0;
 	width:760px;
+	font-size:35px;
 	}
 
 h2 {
