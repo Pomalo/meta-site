@@ -18,7 +18,7 @@ if ( !empty($withcomments) && !is_single() ) {
 ?>
 	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/img/wp_content_bkg_wide.png") repeat-y top; border: none; }
 <?php } else { // No sidebar ?>
-	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/img/wp_content_bkg.png") repeat-y top; border: none; }
+	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/img/wp_content_bkg_wide.png") repeat-y top; border: none; }
 <?php } ?>
 
 </style>
