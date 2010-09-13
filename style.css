@@ -244,6 +244,13 @@ a:hover {
 	font-style: normal;
 	text-transform: capitalize;
 	}
+	
+	
+.author {
+ font-weight:bold;
+ color:#F60;
+ font-size:large;
+}
 /* End Typography & Colors */
 
 
