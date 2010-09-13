@@ -8,27 +8,27 @@
 		    <?php if (in_category('reflexion')) continue; ?>
 
 			<div class="post" id="post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 				<small><?php the_time('F jS, Y') ?> <!-- by <?php the_author() ?> --></small>
 
 				<div class="entry">
-					<?php the_content('Read the rest of this entry &raquo;'); ?>
+					<?php the_content('Lire le reste de ce billet &raquo;'); ?>
 				</div>
 
-				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></p>
+				<p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posté dans <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('Pas de commentaires &#187;', '1 Commentaire &#187;', '% Commentaires &#187;'); ?></p>
 			</div>
 
 		<?php endwhile; ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
+			<div class="alignleft"><?php next_posts_link('&laquo; Billets précédents') ?></div>
+			<div class="alignright"><?php previous_posts_link('Billets suivants &raquo;') ?></div>
 		</div>
 
 	<?php else : ?>
 
-		<h2 class="center">Not Found</h2>
-		<p class="center">Sorry, but you are looking for something that isn't here.</p>
+		<h2 class="center">Vide !</h2>
+		<p class="center">Désolé, cherchez autre chose, ou cherchez ailleurs...</p>
 		<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 
 	<?php endif; ?>
