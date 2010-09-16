@@ -5,7 +5,7 @@
 	<?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
-		    <?php if (in_category('reflexion')) continue; ?>
+		    <?php if (in_category('reflexion') || in_category('histoire')) continue; ?>
 
 			<div class="post" id="post-<?php the_ID(); ?>">
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
