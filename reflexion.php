@@ -47,9 +47,10 @@ if ($category) {
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 	    <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
         <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Lien permanent vers <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-        <small><?php the_time('F jS, Y') ?></small> par <em class="author"><?php the_author() ?></em>
+        <small><?php the_time('j F Y') ?></small> par <em class="author"><?php the_author() ?></em>
         <div class="entry">
-          <?php the_content('Lire le reste de ce billet »'); ?>
+	  <?php global $more; $more = FALSE; ?>
+          <?php the_content('Lire le reste de ce billet'); ?>
         </div>
         <p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posté dans <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('Pas de commentaires »', '1 Commentaire »', '% Commentaires »'); ?></p>
       </div>
