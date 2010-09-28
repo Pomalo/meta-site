@@ -11,6 +11,7 @@
 
 		<div class="post" id="post-<?php the_ID(); ?>">
 			<h2><?php the_title(); ?></h2>
+			le <small><?php the_time('j F Y') ?></small> par <em class="author"><?php the_author() ?></em>
 
 			<div class="entry">
 				<?php the_content('<p class="serif">Lire le reste de ce billet &raquo;</p>'); ?>
