@@ -5,8 +5,8 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<div class="navigation">
-			<div class="alignleft"><?php previous_post_link('&laquo; %link') ?></div>
-			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
+			<div class="alignleft"><?php previous_post_link('&laquo; %link','Lire l&#39;épisode précédent',TRUE) ?></div>
+			<div class="alignright"><?php next_post_link('%link &raquo;','Lire l&#39;épisode suivant',TRUE) ?></div>
 		</div>
 
 		<div class="post" id="post-<?php the_ID(); ?>">
@@ -53,6 +53,10 @@
 
 			</div>
 		</div>
+	<div class="navigation">
+			<div class="alignleft"><?php previous_post_link('&laquo; %link','Lire l&#39;épisode précédent',TRUE) ?></div>
+			<div class="alignright"><?php next_post_link('%link &raquo;','Lire l&#39;épisode suivant',TRUE) ?></div>
+	</div>
 
 	<?php comments_template(); ?>
 
