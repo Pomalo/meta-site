@@ -38,4 +38,18 @@ if ( empty($withcomments) && !is_single() ) {
 	</ul>
 		
 </div>
+<div id="top-sub-menu">
+<?php
+  if($post->post_parent)
+  $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+  else
+  $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+  if ($children) { ?>
+  <ul>
+  <?php echo $children; ?>
+  </ul>
+  <?php } ?>
+
+		
+</div>
 <div style="clear:both; "></div>
