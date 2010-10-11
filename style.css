@@ -70,6 +70,38 @@ body {
 	font-size: 12px;
 }
 
+#top-sub-menu{
+	clear: both;
+	margin:0px auto;
+	width:780px;
+	line-height:30px;
+	text-align: center;
+	border-left: 10px solid #800000;
+	border-right: 10px solid #800000;
+	background: #ffcc00;
+}
+
+#top-sub-menu a{
+	text-decoration: none;
+	color: #600000;
+	padding-left:20px;
+}
+
+#top-sub-menu a:hover{
+	color:#0066ff;
+}
+
+#top-sub-menu ul{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#top-sub-menu ul li{
+	display: inline;
+	font-size: 10px;
+	font-weight:bold;
+}
+
 
 #content {
 	
